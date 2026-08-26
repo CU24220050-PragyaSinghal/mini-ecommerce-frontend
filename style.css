@@ -52,6 +52,18 @@ nav a {
 nav a:hover {
     color: var(--accent-color);
 }
+.cart-count {
+    display: inline-grid;
+    place-items: center;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 6px;
+    margin-left: 4px;
+    background: var(--accent-color);
+    color: var(--secondary-color);
+    border-radius: 999px;
+    font-size: 12px;
+}
 
 /* Hero */
 .hero {
@@ -278,6 +290,11 @@ nav a:hover {
     margin-bottom: 10px;
     font-size: 1.15rem;
 }
+.product-info .btn {
+    margin-top: 16px;
+    padding: 10px 16px;
+    font-size: 14px;
+}
 .price {
     color: var(--primary-color);
     font-size: 20px;
@@ -339,6 +356,22 @@ nav a:hover {
 .checkout-btn {
     float: right;
 }
+.empty-cart {
+    text-align: center;
+    padding: 20px;
+}
+.remove-btn {
+    border: 1px solid #cbd5e1;
+    background: var(--white-color);
+    color: #b91c1c;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.quantity-input {
+    width: 64px;
+    padding: 8px;
+}
 
 /* Checkout Form */
 .checkout-form {
@@ -367,6 +400,19 @@ nav a:hover {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+.form-error {
+    display: block;
+    min-height: 20px;
+    margin-top: -14px;
+    margin-bottom: 8px;
+    color: #b91c1c;
+}
+.order-confirmation {
+    clear: both;
+    color: #15803d;
+    font-weight: bold;
+    margin-top: 18px;
 }
 .checkout-form fieldset {
     border: 1px solid #ddd;

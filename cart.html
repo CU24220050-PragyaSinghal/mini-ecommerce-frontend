@@ -13,14 +13,15 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
-            <a href="cart.html">Cart</a>
+            <a href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a>
         </nav>
     </div>
 </header>
 <main class="container">
 
   <h2 class="section-title">Shopping Cart</h2>
-    <div class="cart-container">
+    <div id="cart-container" class="cart-container">
+        <p id="empty-cart" class="empty-cart" style="display: none;">Your cart is empty.</p>
         <table class="cart-table">
             <thead>
                 <tr>
@@ -28,27 +29,14 @@
                     <th>Quantity</th>
                     <th>Price</th>
                     <th>Subtotal</th>
+                    <th>Action</th>
                 </tr>
             </thead>
 
-            <tbody>
-                <tr>
-                    <td>Wireless Headphones</td>
-                    <td>1</td>
-                    <td>₹1,499</td>
-                    <td>₹1,499</td>
-                </tr>
-
-                <tr>
-                    <td>Smart Watch</td>
-                    <td>1</td>
-                    <td>₹2,499</td>
-                    <td>₹2,499</td>
-                </tr>
-
+            <tbody id="cart-items">
                 <tr class="total-row">
                     <td colspan="3"><strong>Grand Total</strong></td>
-                    <td><strong>₹3,998</strong></td>
+                    <td><strong id="grand-total">₹0</strong></td>
                 </tr>
 
             </tbody>
@@ -64,5 +52,6 @@
     <p>Contact: support@shopease.com | Phone: +91 98765 43210</p>
     <p>&copy; 2026 ShopEase. All Rights Reserved.</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
